@@ -1,7 +1,7 @@
 package Interface;
 
-import static school.Data.FOR_TC_PER_WEEK;
-import static school.tests.Assert.aAssert;
+import static Interface.ISalary.FOR_TC_PER_WEEK;
+import static Interface.tests.Assert.aAssert;
 
 public class School {
 
@@ -49,5 +49,6 @@ public class School {
 
         aAssert(EXPECTED_BASE_SALARY, teacher1.getBaseSalary());
         aAssert(EXPECTED_PAY_CHECK, teacher1.getSalary());
+        System.out.println(teacher1.getSalaryPerMonth()+"  "+teacher1.getTaxes());
     }
 }

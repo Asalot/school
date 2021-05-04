@@ -1,6 +1,6 @@
 package Interface;
 
-public final class Security extends BaseWorker {
+public final class Security extends BaseWorker{
 
     Security(String firstName, String lastName, char gender, int age, String status) {
         super(firstName, lastName, gender, age, status);

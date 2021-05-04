@@ -1,8 +1,6 @@
 package Interface;
 
-import static school.Data.*;
-
-public final class Teacher extends BaseEmployee {
+public final class Teacher extends BasePerson implements ISalary {
 
     private String subject;
     private int set;
@@ -26,6 +24,7 @@ public final class Teacher extends BaseEmployee {
     }
 
     public double getBaseSalary() {
+
         return set * BASE_HOURS_SET * HOURLY_WAGE_PER_TEACHER;
     }
 
@@ -34,10 +33,6 @@ public final class Teacher extends BaseEmployee {
         return salaryPerMonth;
     }
 
-    @Override
-    public double getTaxes() {
-        return getSalaryPerMonth() * 30/100;
-    }
 
     @Override
     public double getSalary() {

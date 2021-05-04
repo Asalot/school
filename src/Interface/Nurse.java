@@ -1,6 +1,6 @@
 package Interface;
 
-public final class Nurse extends BaseWorker {
+public final class Nurse extends BaseWorker  {
 
     Nurse(String firstName, String lastName, char gender, int age, String status) {
         super(firstName, lastName, gender, age, status);
